@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR de PDF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OCR de PDF</h1>
+        <label for="pdfInput">Selecione um ou mais PDFs</label>
+        <input type="file" id="pdfInput" multiple>
+        <button id="processButton">Processar PDFs</button>
+        <div id="output"></div>
+        <div class="pdf-info">(Nota: A conversão pode demorar dependendo do tamanho do PDF)</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
